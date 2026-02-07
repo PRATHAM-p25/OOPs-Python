@@ -44,4 +44,4 @@ student1 = CollegeStudent(
     "ABC Engineering College"
 )
 
-student1.display_college_student()
+student1.display_college_student() 
