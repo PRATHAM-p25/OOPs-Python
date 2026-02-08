@@ -13,3 +13,4 @@ class DiscountedProduct(Product):
         return self.price - discount
     
 p1=DiscountedProduct("laptop",1000,20)
+print(p1.get_discounted_price())
