@@ -1,0 +1,1 @@
+console.log("Flask Basics Project Loaded!");
