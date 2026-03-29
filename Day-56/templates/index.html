@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <h3>Home</h3>
+    <p>Welcome to the Course Portal. Role: {{ user_role }}</p>
+
+    {% if user_role == "admin" %}
+        <p>Admin Panel</p>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Courses{% endblock %}
+
+{% block content %}
+<h3>Courses</h3>
+
+<ul>
+    {% for c in courses %}
+        <li>{{ c }}</li>
+    {% endfor %}
+</ul>
+
+<p>Role: {{ user_role }}</p>
+{% endblock %}

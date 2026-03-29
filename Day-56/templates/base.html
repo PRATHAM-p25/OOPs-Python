@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Course Portal{% endblock %}
+
+    </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <h2>Course Portal</h2>
+
+    <nav>
+        <a href="/?role={{ user_role }}">Home</a>
+        <a href="/courses?role={{ user_role }}">Courses</a>
+        <a href="/profile?role={{ user_role }}">Profile</a>
+
+        {% if user_role == "admin" %}
+            <a href="/admin?role=admin">Admin Panel</a>
+        {% endif %}
+    </nav>
+
+    {% block content %}{% endblock %}
+
+    <footer>
+        © Course Portal
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+</html>
