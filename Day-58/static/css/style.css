@@ -1,0 +1,19 @@
+body {
+    font-family: Arial;
+}
+
+.navbar {
+    background: #333;
+    padding: 10px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background: #eee;
+}
