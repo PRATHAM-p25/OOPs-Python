@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Dashboard</h2>
+
+<h3>Feedback</h3>
+<p>Submit your feedback</p>
+
+<form method="POST" action="{{ url_for('submit') }}">
+    <input type="text" name="name">
+    <input type="text" name="email">
+    <textarea name="message"></textarea>
+    <button type="submit">Submit</button>
+</form>
+{% endblock %}
