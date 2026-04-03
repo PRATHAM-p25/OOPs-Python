@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h3>Feedback</h3>
+
+<form class="search-form">
+    <input type="text" name="q" value="{{ search }}">
+    <button type="submit">Search</button>
+</form>
+
+{% if entries %}
+<ul class="feedback-list">
+    {% for e in entries %}
+    <li class="feedback-item">
+        {{ e.name }} - {{ e.email }} - {{ e.message }}
+    </li>
+    {% endfor %}
+</ul>
+{% else %}
+<p class="empty-msg">No results</p>
+{% endif %}
+{% endblock %}

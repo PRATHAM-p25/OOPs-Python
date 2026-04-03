@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h3>Add Feedback</h3>
+
+<form method="POST">
+    <input type="text" name="name">
+    <input type="text" name="email">
+    <textarea name="message"></textarea>
+    <button type="submit">Submit</button>
+</form>
+{% endblock %}
