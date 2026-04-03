@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h3>Trigger Errors</h3>
+
+<a href="{{ url_for('trigger_404') }}">Trigger 404</a><br>
+<a href="{{ url_for('trigger_500') }}">Trigger 500</a><br>
+<a href="{{ url_for('trigger_custom') }}">Trigger Custom</a>
+{% endblock %}
